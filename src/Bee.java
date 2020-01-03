@@ -1,11 +1,10 @@
 import java.awt.image.BufferedImage;
 
-public class Bee extends FlyingObject {
+public class Bee extends FlyingObject implements  Award {
 	private int xStep; 
 	private int yStep; 
 	private int awardType; 
-	public static int DOUBLE_FIRE = 0;
-	public static int LIFE = 1;
+	
 	
 	public Bee(){
 		width = 60;

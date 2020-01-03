@@ -93,14 +93,14 @@ public class World extends JPanel{
 						Airplane e = (Airplane)f;
 						score += e.getScore();
 					}
-					if(f instanceof Bee){
-						Bee a = (Bee)f;
+					if(f instanceof Award){
+						Award a = (Award)f;
 						int type = a.getType();
 						switch(type){
-						case 0:
+						case Award.DOUBLE_FIRE:
 							hero.addDoubleFire();
 							break;
-						case 1:
+						case Award.LIFE:
 							hero.addLife();
 							break;
 						}
