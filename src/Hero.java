@@ -1,8 +1,8 @@
 import java.awt.image.BufferedImage;
-
+//player two things
 public class Hero extends FlyingObject  {
-	private int life; 
-	private int doubleFire; 
+	private int life; //life
+	private int doubleFire; //fire
 	
 	
 	public Hero(){

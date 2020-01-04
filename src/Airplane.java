@@ -1,6 +1,6 @@
 import java.awt.image.BufferedImage;
 
-
+//little enemy
 public class Airplane extends FlyingObject implements Enemy {
 	private int step;
 
@@ -9,7 +9,7 @@ public class Airplane extends FlyingObject implements Enemy {
 		height = 50;
 		x = (int) (Math.random() * (World.WIDTH - this.width));
 		y = -this.height;
-		step = 2; 
+		step = 2; //speed
 	}
 
 	

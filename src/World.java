@@ -15,8 +15,8 @@ public class World extends JPanel{
 	public static final int HEIGHT = 700;
 	private Sky sky = new Sky();
 	private Hero hero = new Hero();
-	private FlyingObject[] enemies = {}; 
-	private Bullet[] bullets = {}; 
+	private FlyingObject[] enemies = {}; //enemyarray
+	private Bullet[] bullets = {};  //bulletarray
 	
 	public static final int START = 0;
 	public static final int RUNNING = 1;
@@ -129,7 +129,7 @@ public class World extends JPanel{
 		bullets = Arrays.copyOf(bulletLives,index);
 	}
 	
-	public void hitAction(){
+	public void hitAction(){ //hit
 		for(int i=0;i<enemies.length;i++){
 			FlyingObject f = enemies[i];
 			if(f.isLife() && hero.isLife() && hero.hit(f)){
@@ -146,7 +146,7 @@ public class World extends JPanel{
 		}
 	}
 	
-	public void action(){ 
+	public void action(){ //gameon
 		MouseAdapter l = new MouseAdapter(){
 			public void mouseMoved(MouseEvent e){
 				if(state==RUNNING){

@@ -4,7 +4,7 @@ import java.awt.Graphics;
 
 public class Sky extends FlyingObject  {
 	private int step;
-	private int y1; 
+	private int y1; //skywalk
 	
 	
 

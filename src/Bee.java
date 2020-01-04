@@ -1,9 +1,9 @@
 import java.awt.image.BufferedImage;
-
+//award
 public class Bee extends FlyingObject implements  Award {
 	private int xStep; 
 	private int yStep; 
-	private int awardType; 
+	private int awardType; //type 
 	
 	
 	public Bee(){

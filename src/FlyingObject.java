@@ -2,7 +2,7 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.awt.Graphics;
 
-
+//allflything
 public abstract class FlyingObject {
 	protected int width;
 	protected int height;
