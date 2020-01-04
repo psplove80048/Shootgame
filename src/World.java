@@ -85,12 +85,8 @@ public class World extends JPanel{
 				if(b.isLife() && f.isLife() && b.hit(f)){
 					b.goDead();
 					f.goDead();
-					if(f instanceof BigAirplane){
-						BigAirplane e = (BigAirplane)f;
-						score += e.getScore();
-					}
-					if(f instanceof Airplane){
-						Airplane e = (Airplane)f;
+					if(f instanceof Enemy){
+						Enemy e = (Enemy)f;
 						score += e.getScore();
 					}
 					if(f instanceof Award){

@@ -1,7 +1,7 @@
 import java.awt.image.BufferedImage;
 
 
-public class Airplane extends FlyingObject  {
+public class Airplane extends FlyingObject implements Enemy {
 	private int step;
 
 	public Airplane() {
